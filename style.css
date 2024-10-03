@@ -1,0 +1,241 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Hanken Grotesk;
+}
+#container{
+    width: 100%;
+    height: 100vh;
+    background: hsl(221, 100%, 96%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.main_card{
+    width: 365px;
+    height: 261px;
+    background: hsl(221, 100%, 96%);
+    display: flex;
+    box-shadow: 1px 5px 20px hsl(241, 100%, 89%);
+    border-radius: 20px;
+}
+.left_card{
+    width: 50%;
+    height: 100%;
+    padding: 12px 30px;
+    background: linear-gradient(hsl(252, 100%, 67%),hsl(241, 81%, 54%));
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    color: hsl(0, 0%, 100%);
+    border-radius: 20px;
+}
+.left_card_p1{
+    font-size: 12px;
+    color: hsl(241, 100%, 89%);
+    font-weight: 600;
+}
+.circle{
+    width: 105px;
+    height: 105px;
+    background: linear-gradient(hsla(256, 72%, 46%, 1),hsla(241, 72%, 46%, 0));
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 10px;
+}
+.number76{
+    font-size: 34px;
+    font-weight: 700;
+    color: hsl(0, 0%, 100%);
+}
+.number100{
+    font-size: 9px;
+    color: hsl(241, 100%, 89%);
+}
+.left_card_p2{
+    font-size: 16px;
+    font-weight: 600;
+    margin-top: 5px;
+}
+.left_card_p3{
+    text-align: center;
+    font-size: 9px;
+    color: hsl(241, 100%, 89%);
+    margin-bottom: 5px;
+}
+.left_card_p3a{
+    display: none;
+}
+
+.right_card{
+    width: 50%;
+    height: 100%;
+    padding: 12px 20px;
+    background: hsl(221, 100%, 96%);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    border-radius: 20px;
+}
+.categories{
+    display: flex;
+    flex-direction: column;
+    gap: 9px;
+}
+.cate{
+    width: 100%;
+    height: 20px;
+    font-size: 9px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 15px 5px;
+}
+.category1{
+    background-color: hsla(0, 100%, 67%, 8%);   
+}
+.category1 .cate_name{
+    color: hsl(0, 100%, 67%);   
+}
+.category2{
+    background-color: hsla(39, 100%, 56%, 8%);
+}
+.category2 .cate_name{
+    color: hsl(39, 100%, 56%);   
+}
+.category3{
+    background-color: hsla(166, 100%, 37%, 8%);
+}
+.category3 .cate_name{
+    color: hsl(166, 100%, 37%);   
+}
+
+.category4{
+    background-color: hsla(234, 85%, 45%, 8%);
+}
+.category4 .cate_name{
+    color: hsl(234, 85%, 45%);   
+}
+.p_bold{
+    font-size: 12px;
+    font-weight: 800;
+}
+.number_bold{
+    font-weight: 800;
+}
+.cate_name{
+    margin-right: 35px;
+    font-weight: 600;
+}
+.categories img{
+    width: 10px;
+}
+.right_card button{
+    width: 100%;
+    height: 30px;
+    background: hsl(224, 30%, 27%);
+    border: none;
+    border-radius: 25px;
+    color: hsl(0, 0%, 100%);
+    font-size: 9px;
+}
+.right_card button:hover{
+    background: linear-gradient(hsl(252, 100%, 67%),hsl(241, 81%, 54%));
+}
+
+@media (max-width:375px){
+    .main_card{
+        width: 100%;
+        height: 100vh;
+        background: hsl(221, 100%, 96%);
+        display: flex;
+        flex-direction: column;
+        box-shadow: 1px 5px 20px hsl(241, 100%, 89%);
+        border-radius: 0;
+    }
+    .left_card{
+        width: 100%;
+        height: 45%;
+        padding: 12px 30px;
+        background: linear-gradient(hsl(252, 100%, 67%),hsl(241, 81%, 54%));
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        color: hsl(0, 0%, 100%);
+        border-radius: 0 0 20px 20px;
+    }
+
+    .right_card{
+        width: 100%;
+        height: 55%;
+        padding: 12px 20px;
+        background: hsl(221, 100%, 96%);
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        border-radius: 0;
+    }
+
+
+    .left_card_p1{
+        font-size: 15px;
+    }
+    .circle{
+        width: 110px;
+        height: 110px;
+        margin-top: 0px;
+    }
+    .number76{
+        font-size: 38px;
+    }
+    .number100{
+        font-size: 11px;
+    }
+    .left_card_p2{
+        font-size: 18px;
+        margin-top: 0px;
+    }
+    .left_card_p3{
+        display: none;
+    }
+    .left_card_p3a{
+        display: flex;
+        font-size: 12px;
+        margin-bottom: 5px;
+        text-align: center;
+        padding: 0 15px;
+    }
+    .p_bold{
+        font-size: 13px;
+    }
+
+    .categories{
+        gap: 13px;
+    }
+    .cate{
+        width: 100%;
+        height:40px;
+        font-size: 11px;
+        border-radius: 10px;
+        padding: 0 5px;
+    }
+    .categories img{
+        width: 13px;
+    }
+    .cate_name{
+        margin-right: 50px;
+    }
+    .right_card button{
+        width: 100%;
+        height: 40px;
+        font-size: 12px;
+    }
+}
